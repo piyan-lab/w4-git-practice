@@ -12,6 +12,7 @@
       <h1>🤖 練習用 Chatbot</h1>
       <!-- 練習一：把標題改成你們組的名字 -->
       <p class="subtitle">W4 Git Branch 練習</p>
+      <p class="counter" id="counter">訊息數：0</p>
     </header>
 
     <div id="chat-box">
@@ -49,6 +50,10 @@
 
       input.value = '';
       chatBox.scrollTop = chatBox.scrollHeight;
+
+      // 更新訊息計數
+      const count = chatBox.querySelectorAll('.message.user').length;
+      document.getElementById('counter').textContent = `訊息數：${count}`;
     }
 
     // 按 Enter 也能送出

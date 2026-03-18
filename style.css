@@ -102,3 +102,10 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 .input-area button:hover {
   opacity: 0.85;
 }
+
+/* ===== feature/add-counter 新增 ===== */
+header .counter {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
